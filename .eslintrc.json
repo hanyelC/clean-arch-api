@@ -1,8 +1,16 @@
 {
-  "extends": "standard-with-typescript",
+  "extends": [
+    "standard-with-typescript",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
   "rules": {
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
@@ -10,6 +18,8 @@
     "@typescript-eslint/return-await": "off",
     "@typescript-eslint/restrict-template-expressions": "off",
     "@typescript-eslint/no-misused-promises": "off",
-    "@typescript-eslint/no-extraneous-class": "off"
+    "@typescript-eslint/no-extraneous-class": "off",
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"]
   }
 }

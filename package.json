@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node build/main/server.js",
-    "build": "rimraf build && tsup src --out-dir build"
+    "build": "rimraf build && tsup src --out-dir build",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "yarn lint --fix"
   },
   "keywords": [],
   "author": "",

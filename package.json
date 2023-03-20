@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node build/main/server.js",
+    "start:dev": "tsx watch src/main/server.ts",
     "build": "rimraf build && tsup src --out-dir build",
     "lint": "eslint src --ext .ts",
     "lint:fix": "yarn lint --fix"
